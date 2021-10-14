@@ -22,3 +22,8 @@
 - .concordance("문장")통해 문장내 일치 확인
 - re.compile통해 regex 규칙을 만든 후 적용
 - contraction 축약?
+
+
+
+#라이브러리 설치 명령어
+pip install -r requirements.txt
