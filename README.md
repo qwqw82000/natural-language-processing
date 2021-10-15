@@ -21,7 +21,7 @@
 - 가져온 text를 word_tokenize통해서 tokenize해준다.
 - .concordance("문장")통해 문장내 일치 확인
 - re.compile통해 regex 규칙을 만든 후 적용
-- contraction 축약?
+- contraction는 I’ve -> I have로 바꾸는 좋은것
 # 5. vectorization
 - 문장 사전 만들기
 - 벡터화 하는 로직 만들기
