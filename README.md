@@ -22,8 +22,26 @@
 - .concordance("문장")통해 문장내 일치 확인
 - re.compile통해 regex 규칙을 만든 후 적용
 - contraction 축약?
-
-
+# 5. vectorization
+- 문장 사전 만들기
+- 벡터화 하는 로직 만들기
+- Bag Of Words(단어 빈도수 만들기)
+- TF-IDF(중요도)
+- sklearn이용한 벡터화(정말 간단)
+# 6. sentimental_analysis
+- 트위터 csv 가져오기
+- 데이터로 그래프 그려보기
+- 문장 내부 특수문자 제거
+- 불용어 제거
+- 단어들 어근화
+- Vectorization
+- Train_X, Test_X, Train_Y, Test_Y 분리
+- LinearSVC모델로 학습시키기
+- accuracy_score로 성능확인(prediction, Test_Y)값 비교
 
 #라이브러리 설치 명령어
 pip install -r requirements.txt
+#가상환경 설치 
+python -m venv 가상환경이름
+#라이브러리 저장 명령어
+pip freeze > requirements.txt
