@@ -62,6 +62,62 @@
 - lda 모델 이용한 학습(비지도 학습용 모델)(비지도 학습 이므로 라벨링은 없다.)
 - 솔직히 이 다음부터는 이해가 안된다. 그저 학습을 하면 카테고리별 라벨링이 되고 검증할 방법은 없다는 것만 이해함
 
+# 11. chunking-chinking
+- 이 문서는 구를 만드는 문서이다.
+- 청킹 (Chunking) => 토큰 (token)을 가지고 구(pharase)를 만드는 것
+- 만들어진 구(pharase) => chunk라고 함!
+
+# 12. textblob_01
+- 이 문서는 textblob에 대한 문서이다
+- `textblob`은 `NLTK`를 기반으로 하여 텍스트 처리를 수월하게 할 수 있도록 다양한 기능을 많이 포함하고 있다
+- .words 하면 단어단위로 토큰화
+- .sentences하면 문자단위로 토큰화
+- .tokens 일반적인 토큰화
+- .tags 태깅
+
+# 12. textblob_02
+- 이 문서는 textblob에 대한 문서이다
+- .synsets는 단어를 넣었을때 여러개의 유사단어를 뽑아준다(리스트로)
+- .lemmas는 표제어를 추출해준다
+- .definitions 단어의 뜻을 뽑아준다
+- .path_similarity 유사도를 판단할때 사용한다.
+- 조합상 가장 높은 유사성 찾아주는 프로그램
+
+# 12. textblob_03
+- 이 문서는 textblob에 대한 문서이다
+- 빈도 확인 순서
+1. blob 만들기
+2. 단어 리스트 만들기
+3. 단어 개수 세기
+4. 특정 단어 개수 세기
+5. WORD SIGN STEM 개수 세기
+- .correct 맞춤법 확인 메소드
+- .ngrams 단어들 묶어서 가져오기
+- 묶은 단어들로 빈도 찾기
+- 빈도가 높은 단어 찾기 프로그램
+1. 입력받기
+2. TextBlob(입력)
+3. 문법 검사
+4. .word_counts .....(단어 빈도 찾기)
+5. max  함수로 딕셔너리중 최대 값 찾기
+6. 그에 해당하는 value 출력
+
+# 12. textblob_04
+- 이 문서는 textblob에 대한 문서이다
+- 감성분석
+- .sentiment 결과로 Sentiment(polarity=0.4, subjectivity=0.5)이런 게 나옴
+- polarity는 극성(+면 긍정 -면 부정) subjectivity는 주관적인지 확인해줌
+- 하지만 이런 메소드는 생각보다 효과가 별로임
+- 데이터셋 다운
+- 학습용 데이터와 평가용 데이터 다운
+- 전처리
+- 나이브 베이즈 모델 사용
+- 성능은 0.7정도 나옴
+- .classify 메소드로 긍부정 분류 
+# 12. textblob_05
+- 데이터 셋으로 학습시키기
+- 현재 계속 오류가 나는데 왜인지는 확인 안됨
+
 
 #라이브러리 설치 명령어
 pip install -r requirements.txt
